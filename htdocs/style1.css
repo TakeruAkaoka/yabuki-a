@@ -1,0 +1,16 @@
+﻿body{ background-color: #000000;
+width:100%;
+margin-left: 0;
+margin-right: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+p.resizeimage img { border-color: #bdb76b; width: 100%; }
+
+.twitter-timeline {
+position: absolute;
+left:100;
+}
