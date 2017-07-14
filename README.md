@@ -1,2 +1,2 @@
 # yabuki-a
-https://github.com/yabukilab/yabuki-a
+http://yabukia.pm-chiba.tech/
