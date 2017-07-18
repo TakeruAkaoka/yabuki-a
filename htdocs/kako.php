@@ -82,7 +82,7 @@ foreach ($result as $person)
 			<tr>
 				<td align="center">
 <?php
-$mime = $person['mie'];
+$mime = $person['mime'];
 $image = base64_encode($person['imgdat']);
 echo "<img src='data:${mime};base64,${image}'>";
 ?>

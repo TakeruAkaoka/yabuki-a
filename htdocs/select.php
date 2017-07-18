@@ -26,11 +26,9 @@
         $prepare->execute();
         $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
         #すべてのつぶやきを表示する。
-        echo '<ul>';
         foreach ($result as $tweet) {
-          echo '<li><a href = "kako.php?foo=' . h($tweet['ID']) .'">'.h($tweet['teacher']).'</a></li>';
+          echo '<p><a href = "kako.php?foo=' . h($tweet['ID']) .'">'.h($tweet['teacher']).'</a></p>';
         }
-        echo '</ul>';
       } catch (PDOException $e) {
         # エラーが発生した場合、PDOException例外がスローされるのでキャッチします。
         echo 'エラーが発生しました。内容: ' . h($e->getMessage());
