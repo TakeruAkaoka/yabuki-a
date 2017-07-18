@@ -13,9 +13,9 @@ mysql_close( $link ) or die("MySQL切断に失敗しました。");
 
 if($rows){
     while($row = mysql_fetch_array($result)) {
-        header( "Content-Type: ".$row['mie'] );
+        header( "Content-Type: ".$row['mime'] );
         echo $row['imgdat'];
-        header( "Content-Type: ".$row['mie'] );
+        header( "Content-Type: ".$row['mime'] );
         echo $row['imgdat'];
     }
 }
