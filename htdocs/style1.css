@@ -1,27 +1,11 @@
-﻿body{ 
-background-color: #000000;
+﻿body{ background-color: #ffffff;
 width:100%;
 margin-left: 0;
 margin-right: 0;
 }
 
-h1 {
-text-align:center;
-font-size:50px;
-color:red;
-}
-
 a {
 text-decoration: none;
-font-size:20px;
-}
-a:link{color: #ff0000;} "未訪問のリンク
-a:visited { color: #ff0000; } " 訪問済みのリンク
-a:hover { color: #ff0000; } " ポイント時のリンク
-a:active { color: #ff0000; } " 選択中のリンク
-
-p {
-font-size:20px;
 }
 
 p.resizeimage img { border-color: #bdb76b; width: 100%; }
@@ -29,10 +13,4 @@ p.resizeimage img { border-color: #bdb76b; width: 100%; }
 .twitter-timeline {
 position: absolute;
 left:100;
-}
-
-#teacher {
-text-align:center;
-color:red;
-font-size:36px;
 }
