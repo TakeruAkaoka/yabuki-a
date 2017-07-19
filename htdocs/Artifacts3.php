@@ -1,7 +1,10 @@
 ﻿<?php
 //データベース接続設定
-require_once 'database_conf.php';
-
+$dbServer = '127.0.0.1';
+$dbName = 'kensaku';
+$dsn = "mysql:host={$dbServer};dbname={$dbName};charset=utf8";
+$dbUser = 'k';
+$dbPass = '12345';
 //データベースへの接続
 $db = new PDO($dsn, $dbUser, $dbPass);
 
