@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017 年 7 朁E19 日 10:35
+-- Generation Time: 2017 年 7 朁E19 日 10:47
 -- サーバのバージョン： 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 -- テーブルの構造 `posts`
 --
 
+DROP TABLE IF EXISTS `posts`;
 CREATE TABLE `posts` (
   `ID` int(20) UNSIGNED NOT NULL,
   `subject` varchar(20) NOT NULL,
@@ -73,6 +74,7 @@ INSERT INTO `posts` (`ID`, `subject`, `teacher`, `semesuta`, `tanni`, `kimatu`, 
 -- テーブルの構造 `seika`
 --
 
+DROP TABLE IF EXISTS `seika`;
 CREATE TABLE `seika` (
   `id` int(10) NOT NULL,
   `name` varchar(30) NOT NULL,
