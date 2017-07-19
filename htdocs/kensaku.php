@@ -46,9 +46,8 @@ if(empty($_POST)) {
 
 if(count($errors) === 0){
 
-	$dsn = 'mysql:host=localhost;dbname=kensaku;charset=utf8';
-	$user = 'k';
-	$password = '12345';
+require_once 'database_conf.php';
+
 
 	try{
 		$dbh = new PDO($dsn, $user, $password);
