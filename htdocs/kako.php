@@ -37,16 +37,13 @@ foreach ($result as $person)
 			</tr>
 		</table>
 		<br></br>
-		<br></br>
-		<table width="1000px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
-			<tr>
-				<th>
-					<font size="7"color="ff0000"><b><?php echo $person['subject'];
-          echo "<br/>";
-          echo $person['teacher'];?>先生</b></font>
-				</th>
-			</tr>
-		</table>
+		<p id="teacher">
+		<?php 
+			echo $person['subject'];
+			echo '<br>';
+			echo $person['teacher'];
+		?>
+		先生</p> 
 		<br></br>
 		<style type="text/css">
 			.table3 {
@@ -58,15 +55,15 @@ foreach ($result as $person)
 		</style>
 		<div>
 		<table class="table3" border=1 align="center" >
-			<tr><td>科目名</td><td colspan="2"><?php echo $person['subject'];?></td></tr>
-			<tr><td>担当者</td><td colspan="2"><?php echo $person['teacher'];?>先生</td></tr>
-			<tr><td>開講学期</td><td colspan="2"><?php echo $person['semesuta'];?>セメスター</td></tr>
-			<tr><td>単位数</td><td colspan="2"><?php echo $person['tanni'];?></td></tr>
-			<tr><td colspan="3">評価基準</td></tr>
+			<tr><td align="center">科目名</td><td colspan="2"><?php echo $person['subject'];?></td></tr>
+			<tr><td align="center">担当者</td><td colspan="2"><?php echo $person['teacher'];?>先生</td></tr>
+			<tr><td align="center">開講学期</td><td colspan="2"><?php echo $person['semesuta'];?>セメスター</td></tr>
+			<tr><td align="center">単位数</td><td colspan="2"><?php echo $person['tanni'];?></td></tr>
+			<tr><td  align="center"colspan="3">評価基準</td></tr>
 			<tr><td>期末試験<?php echo $person['kimatu'];?>%</td>
-				<td>中間試験<?php echo $person['tyuukan'];?>%</td><td>提出物(1回)20%</td></tr>
-			<tr><td>出席</td><td colspan="2">5回以上欠席した場合は単位を取得できない</td></tr>
-			<tr><td>教科書・参考書</td><td colspan="2">特になし</td></tr>
+				<td>中間試験<?php echo $person['tyuukan'];?>%</td><td>提出物20%</td></tr>
+			<tr><td align="center">出席</td><td colspan="2"><?php echo $person['syusseki'];?>回以上欠席した場合は単位を取得できない</td></tr>
+			<tr><td align="center">教科書・参考書</td><td colspan="2"><?php echo $person['kyoukasyo'];?></td></tr>
 		</table>
 		</div>
 		<br></br>
@@ -82,7 +79,7 @@ foreach ($result as $person)
 			<tr>
 				<td align="center">
 <?php
-$mime = $person['mie'];
+$mime = $person['mime'];
 $image = base64_encode($person['imgdat']);
 echo "<img src='data:${mime};base64,${image}'>";
 ?>
