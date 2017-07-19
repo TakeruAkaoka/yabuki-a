@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017 年 7 朁E19 日 11:14
+-- Generation Time: 2017 年 7 ?E19 日 11:14
 -- サーバのバージョン： 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `yabukia`
+-- Database: `mydb`
 --
 
 -- --------------------------------------------------------
