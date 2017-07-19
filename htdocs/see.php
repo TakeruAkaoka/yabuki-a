@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $url = "127.0.0.1";
 $user = "test";
 $pass = "pass";
@@ -14,7 +14,9 @@ mysql_close( $link ) or die("MySQL切断に失敗しました。");
 if($rows){
     while($row = mysql_fetch_array($result)) {
         header( "Content-Type: ".$row['mie'] );
-	echo($row['mie']);
+        echo $row['imgdat'];
+        header( "Content-Type: ".$row['mie'] );
+        echo $row['imgdat'];
     }
 }
 ?>
