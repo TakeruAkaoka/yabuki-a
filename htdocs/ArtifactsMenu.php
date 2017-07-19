@@ -117,7 +117,7 @@ print "<tr align='center'><td><font size='7' color='000000'><b><a href = ".$pers
 
 <?php
 //prefテーブルからすべてのデータを取り出すSQL文を作る
-$sql = "SELECT name, url FROM seika  LIMIT 40 OFFSET 55";
+$sql = "SELECT name, url FROM seika  LIMIT 39 OFFSET 55";
 $prepare = $db->prepare($sql);
 $prepare->execute();
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC);

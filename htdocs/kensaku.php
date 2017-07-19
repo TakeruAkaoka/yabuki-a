@@ -27,11 +27,7 @@
 
 
 
-<p align="center"><?php
-
-//エラー非表示
-error_reporting(0);
-
+<?php
 header("Content-type: text/html; charset=utf-8");
 
 if(empty($_POST)) {
@@ -45,7 +41,7 @@ if(empty($_POST)) {
 }
 
 if(count($errors) === 0){
-
+	
 	$dsn = 'mysql:host=localhost;dbname=kensaku;charset=utf8';
 	$user = 'k';
 	$password = '12345';
@@ -53,29 +49,29 @@ if(count($errors) === 0){
 	try{
 		$dbh = new PDO($dsn, $user, $password);
 		$statement = $dbh->prepare("SELECT * FROM seika WHERE name LIKE (:name) ");
-
+	
 		if($statement){
 			$yourname = $_POST['yourname'];
 			$like_yourname = "%".$yourname."%";
 			//プレースホルダへ実際の値を設定する
 			$statement->bindValue(':name', $like_yourname, PDO::PARAM_STR);
-
+			
 			if($statement->execute()){
 				//レコード件数取得
 				$row_count = $statement->rowCount();
-
+				
 				while($row = $statement->fetch()){
 					$rows[] = $row;
 				}
-
+				
 			}else{
 				$errors['error'] = "検索失敗しました。";
 			}
-
+			
 			//データベース接続切断
-			$dbh = null;
+			$dbh = null;	
 		}
-
+	
 	}catch (PDOException $e){
 		print('Error:'.$e->getMessage());
 		$errors['error'] = "データベース接続失敗しました。";
@@ -85,8 +81,8 @@ if(count($errors) === 0){
 
 
 
- if (count($errors) === 0):
-?></p>
+ if (count($errors) === 0): 
+?>
 
 <font color='000000'><p align='center'><?=htmlspecialchars($yourname, ENT_QUOTES, 'UTF-8')."さんで検索。"?></p>
 <p align='center'>検索結果は<b><?=$row_count?></b>件です。</p></font>
@@ -94,7 +90,7 @@ if(count($errors) === 0){
 <table align='center' width='1000px' border='1'>
 
 <tr align='center'>
-<td><font color='000000'><b>演習名、所属名<b></font></td></tr></table>
+<td><font color='000000'>演習名、所属名</font></td></tr></table>
 
 
 
@@ -102,20 +98,18 @@ if(count($errors) === 0){
 
 
 
-<?php
+<?php 
 foreach($rows as $row){
 ?>
 
 <table align='center' width='1000px' border='1'>
-<tr align='center'><font color='000000'>
-	<td>
-
-<?php print "<h2><a href = ".$row["url"].">".$row["name"]."</a></h2>";
-?>
+<tr align='center'><font color='000000'> 
+	<td><a href=".$row["url"].">
+		".<?=htmlspecialchars($row["name"],ENT_QUOTES,'UTF-8')?>."</a></td></font></a>
 </tr> </table>
 
-<?php
-}
+<?php 
+} 
 ?>
 
 
