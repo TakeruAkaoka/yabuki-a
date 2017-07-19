@@ -70,8 +70,6 @@
       }
       ?>
       <form method="post" action="tweetimage.php" enctype="multipart/form-data">
-        <p>テキストボックス（autofocus属性を指定）
-          <input type="text" name="example1" value="" autofocus></p>
         <p>画像：<input type="file" name="image"></p>
         <p><input type="submit" value="送信する"></p>
       </form>
