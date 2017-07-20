@@ -10,7 +10,7 @@
   <body vlink="red">
   <h1>PM学科専用闇キャンパスポータル</h1>
 </form>
-    <div>
+    <div id="zure">
       <?php
       # データベース設定☆レシピ260☆（データベースに接続したい）を読み込みます☆レシピ041☆（他のファイルを取り込んで利用したい）。
       require_once 'database_conf.php';

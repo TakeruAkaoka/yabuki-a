@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	<body link="#000000" vlink="#000000" alink="000000">
+	<body link="#ff0000" vlink="#ff0000" alink="#ff0000">
 
 		<table width="100%" align="center" frame="void" rules="none" border="2"  bordercolor="#bdb76b" bgcolor="#ffffff" >
 			<tr>
@@ -46,19 +46,14 @@ if(empty($_POST)) {
 
 if(count($errors) === 0){
 
-// データベース設定（サーバで公開するとき）
-$dbServer = '127.0.0.1';
-$dbUser = $_SERVER['MYSQL_USER'];
-$dbPass = $_SERVER['MYSQL_PASSWORD'];
-$dbName = $_SERVER['MYSQL_DB'];;
-# MySQL用のDSN文字列です。
-$dsn = "mysql:host={$dbServer};dbname={$dbName};charset=utf8";
+require_once 'database_conf.php';
+
 	//$dsn = 'mysql:host=localhost;dbname=kensaku;charset=utf8';
 	//$user = 'k';
 	//$password = '12345';
 
 	try{
-		$dbh = new PDO($dsn, $user, $password);
+		$dbh = new PDO($dsn, $dbUser, $dbPass);
 		$statement = $dbh->prepare("SELECT * FROM seika WHERE name LIKE (:name) ");
 
 		if($statement){
@@ -94,15 +89,15 @@ $dsn = "mysql:host={$dbServer};dbname={$dbName};charset=utf8";
 
  if (count($errors) === 0):
 ?></p>
-
-<font color='000000'><p align='center'><?=htmlspecialchars($yourname, ENT_QUOTES, 'UTF-8')."さんで検索。"?></p>
+<div class="akaku">
+<font color='ff0000'><p align='center'><?=htmlspecialchars($yourname, ENT_QUOTES, 'UTF-8')."さんで検索。"?></p>
 <p align='center'>検索結果は<b><?=$row_count?></b>件です。</p></font>
 
 <table align='center' width='1000px' border='1'>
 
 <tr align='center'>
-<td><font color='000000'><b>演習名、所属名<b></font></td></tr></table>
-
+<td><font color='ff00000'><b>演習名、所属名<b></font></td></tr></table>
+</div>
 
 
 

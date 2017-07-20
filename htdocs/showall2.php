@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
     <title>時間割表示画面</title>
+    <link rel="stylesheet"href="style1.css" type="text/css">
   </head>
-  <body　link="000000" vlink="#000000" alink="000000">
-
-
+  <body vlink="red">
 
 <table width="1000" align="center" frame="void" rules="none" border="2"  bordercolor="#bdb76b" bgcolor="#ffffff" >
 <tr>
@@ -22,7 +21,7 @@
 			<tr>
 				<th>
 				
-					<font size="6"color="000000"><b>【すべての登録画像表示画面】</b></font>
+					<font size="6"color="000000"><div class="akaku"><b>【すべての登録画像表示画面】</b></div></font>
 				</th>
 			</tr>
 		</table>
@@ -35,9 +34,7 @@
 			
 				<td align="center"><font size="7" color="000000"><b><a href="hyoushi2.php">時間割登録画面</a><b></font></td>
 			</tr>
-			<tr>	
-				<td align="center"><font size="7" color="000000"><b><a href="hyoushi1.php">登録画面</a><b></font></td>
-			</tr>
+			
 		</table>
 		
    
@@ -65,7 +62,7 @@
         foreach ($result as $tweet) {
           $id = $tweet['id'];
           $body = h($tweet['body']);
-          echo "<a href='item.php?id=${id}'>${id}</a>：${body}";
+          echo "<a href='item.php?id=${id}'>${body}　　</a>";
         }
         echo '</ul>';
       } catch (PDOException $e) {
