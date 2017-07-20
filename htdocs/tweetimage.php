@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
           $db = new PDO($dsn, $dbUser, $dbPass);
           $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          $sql = 'INSERT INTO posts (kyoukasyo, mime, imgdat) VALUES (:message, :mime, :image)';
+          $sql = 'INSERT INTO tweets (body, mime, image) VALUES (:message, :mime, :image)';
           $prepare = $db->prepare($sql);
           $prepare->bindValue(':message', $_POST['example1'], PDO::PARAM_STR);
           //☆レシピ266 アップロードされが画像の処理☆
@@ -39,19 +39,21 @@
           $prepare->bindValue(':image', $image, PDO::PARAM_STR);
           $prepare->execute();
           $id = $db->lastInsertId();
-          echo '<p>結果</p>';
-          echo "<p>追加したレコードのID: " . h($id) . '</p>';
-	  echo '<p><a href="kako.php?foo='.h($id).'">'."結果を見る".'</a></p>';
+          echo "<p><a href='showallimage.php'>確認</a></p>";
         } catch (PDOException $e) {
           echo 'エラーが発生しました。内容: ' . h($e->getMessage());
         }
       }
       ?>
+      <br>
+      <br>
+      <br>
+      <p>他の画像登録↓</p>
       <form method="post" action="tweetimage.php" enctype="multipart/form-data">
-        <p>テキストボックス（autofocus属性を指定）
+        <p>セメスターと数字
           <input type="text" name="example1" value="" autofocus></p>
         <p>画像：<input type="file" name="image"></p>
-        <p><input type="submit" value="送信する"></p>
+        <p><input type="submit" value="登録する"></p>
       </form>
     </div>
   </body>
