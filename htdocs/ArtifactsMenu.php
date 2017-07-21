@@ -16,6 +16,8 @@
 
 <br>
 
+<p id="komidashi"><b>1年次・オリエンテーション</b></p>
+
 <?php
 //データベース接続設定
 require_once 'database_conf.php';
