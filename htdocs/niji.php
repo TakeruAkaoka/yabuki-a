@@ -28,9 +28,17 @@
           $mime = $_POST['mime'];
           $flag = $_POST['flag'];
               
+          $prepare->bindValue(':subject', $subject, PDO::PARAM_INT);
+          $prepare->bindValue(':teacher', $teacher, PDO::PARAM_STR);
+          $prepare->bindValue(':imgdat', $imgdat, PDO::PARAM_STR);
           $prepare->bindValue(':semesuta', $semesuta, PDO::PARAM_INT);
           $prepare->bindValue(':mime', $type, PDO::PARAM_STR);
-          $prepare->bindValue(':imgdat', $imgdat, PDO::PARAM_STR);
+          $prepare->bindValue(':kimatu', $kimatu, PDO::PARAM_INT);
+          $prepare->bindValue(':tyuukan', $tyuukan, PDO::PARAM_STR);
+          $prepare->bindValue(':kyoukasyo', $kyoukasyo, PDO::PARAM_STR);          
+          $prepare->bindValue(':syusseki', $syusseki, PDO::PARAM_STR);
+          $prepare->bindValue(':teisyutu', $teisyutu, PDO::PARAM_INT);
+          $prepare->bindValue(':flag', $flag, PDO::PARAM_STR);
           $prepare->execute();
           $id = $db->lastInsertId();
           echo '<p>結果</p>';
