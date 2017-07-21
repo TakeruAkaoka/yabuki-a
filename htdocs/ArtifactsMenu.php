@@ -15,17 +15,7 @@
 </form>
 
 <br>
-<<<<<<< HEAD
-<p id="komidashi"><b>1年次・オリエンテーション</b></p>
-=======
 
-
-<table width="800" height="50">
-			<tr>
-				<td align="center"><p id="komidashi"><b>1年次・オリエンテーション</b></p></td>
-			</tr>
-		</table>
->>>>>>> origin/master
 
 <?php
 //データベース接続設定
