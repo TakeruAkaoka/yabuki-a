@@ -28,13 +28,7 @@
         $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
         #すべてのつぶやきを表示する。
 echo '<table class="yoko">';
-	foreach ($result as $tweet) {
-		$url = 'kako.php?foo=' .h($tweet['ID']);
-if(h($tweet['flag']) == 2) {
-echo '<tr><td><a href="' .$url.'">'.h($tweet['teacher']).'</a></td><td class="akaku"><a>'.h($tweet['subject']).'</a></td></tr>';
-	}
 		
-	}	
         foreach ($result as $tweet) {
 		$url = 'kako.php?foo=' .h($tweet['ID']);
 		if(h($tweet['flag']) == 0) {
