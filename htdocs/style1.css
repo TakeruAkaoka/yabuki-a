@@ -35,6 +35,10 @@ position: absolute;
 left:100;
 }
 
+.yoko {
+border-spacing:90px 30px;
+}
+
 #teacher {
 color:red;
 }
@@ -55,6 +59,14 @@ position:relative;
 left:5%;
 }
 
+<<<<<<< HEAD
+.hidari {
+position:relative;
+left:5%;
+}
+
+=======
+>>>>>>> origin/master
 .akaku {
 color:red;
 }
