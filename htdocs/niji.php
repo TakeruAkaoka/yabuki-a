@@ -16,8 +16,18 @@
             }
           }
 
+          $subject = $_POST['subject'];
+          $teacher = $_POST['teacher'];
           $semesuta = $_POST['semesuta'];
-
+          $tanni = $_POST['tanni'];
+          $kimatu = $_POST['kimatu'];
+          $tyuukan = $_POST['tyuukan'];
+          $kyoukasyo = $_POST['kyoukasyo'];
+          $syusseki = $_POST['syusseki'];
+          $teisyutu = $_POST['teisyutu'];
+          $mime = $_POST['mime'];
+          $flag = $_POST['flag'];
+              
           $prepare->bindValue(':semesuta', $semesuta, PDO::PARAM_INT);
           $prepare->bindValue(':mime', $type, PDO::PARAM_STR);
           $prepare->bindValue(':imgdat', $imgdat, PDO::PARAM_STR);
