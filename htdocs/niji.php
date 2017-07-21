@@ -3,7 +3,7 @@
         require_once 'database_conf.php';
         try {
           $db = new PDO($dsn, $dbUser, $dbPass);
-          $sql = 'INSERT INTO posts (semesuta, mime, imgdat) VALUES (:semesuta, :mime, :imgdat)';
+          $sql = 'INSERT INTO posts (subject,teacher,semesuta,tanni,kimatu,tyuukan,kyoukasyo,syusseki,teisyutu,flag, mime, imgdat) VALUES (:subject,:teacher,:semesuta,:tanni,:kimatu,:tyuukan,:kyoukasyo,:syusseki,:teisyutu,:flag, :mime, :imgdat)';
           $prepare = $db->prepare($sql);
 
           if (isset($_FILES['imgdat'])) {
