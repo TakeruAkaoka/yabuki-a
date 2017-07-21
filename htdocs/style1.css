@@ -5,6 +5,10 @@ margin-left: 0;
 margin-right: 0;
 }
 
+form {
+color:red;
+}
+
 h1 {
 text-align:center;
 font-size:50px;
@@ -31,8 +35,35 @@ position: absolute;
 left:100;
 }
 
+.yoko {
+border-spacing:90px 30px;
+}
+
 #teacher {
-text-align:center;
 color:red;
-font-size:36px;
+}
+
+#komidashi {
+color:red;
+font-size:40px;
+}
+
+#center {
+color:red;
+text-align:center;
+font-size:50px;
+}
+
+#zure {
+position:relative;
+left:5%;
+}
+
+.hidari {
+position:relative;
+left:5%;
+}
+
+.akaku {
+color:red;
 }

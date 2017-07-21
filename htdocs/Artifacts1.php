@@ -32,32 +32,16 @@ foreach ($result as $person)
 
 <body link="#000000" vlink="#000000" alink="000000">
 
-<table width="1000" align="center" frame="void" rules="none" border="2"  bordercolor="#bdb76b" bgcolor="#ffffff" >
-<tr>
-<td align="center" valign="middle">
-<font size="7"color="#000000"><b>PM学科専用闇キャンパスポータル</b></font>
-</td>
-</tr>
-</table>
+<h1>PM学科専用闇キャンパスポータル</h1>
 
 <br>
-
-
-	<table width="1000px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
-			<tr>
-				<th>
-					<font size="6"color="000000"><b>過去の演習の成果物</b></font>
-				</th>
-
-			</tr>
-		</table>
-
+<p id="center">過去の演習の成果物</p>
 <hr>
 <br>
 	<table width="1000px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<font size="6"color="000000"><b>1年次・オリエンテーション</b></font>
+					<p id="komidashi"><b>1年次・オリエンテーション</b></p>
 				</th>
 
 			</tr>
@@ -66,7 +50,7 @@ foreach ($result as $person)
 	<table width="500px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<font size="6"color="000000"><b><?php echo $person['teacher'];?>研究室</b></font>
+					<p id="komidashi"><b><?php echo $person['teacher'];?>研究室</b></p>
 				</th>
 
 
@@ -80,18 +64,10 @@ foreach ($result as $person)
 
 <table align="center" width="1000" height="50" border="0" >
 			<tr>
-				<td align="center"><font size="6" color="000000"><b>1.発表パワーポイント<b></font></td>
+				<td align="center"><p id="komidashi"><b>1.発表パワーポイント</b></p></td>
 
 			</tr>
 		</table>
-
-<table align="center" width="1000" height="50" border="3" rules="none">
-			<tr>
-				<td align="center"><font size="6" color="000000"><b><a href="pdf1.php" target="new">パワーポイントを表示</a><b></font></td>
-
-			</tr>
-		</table>
-
  <br>
  <br>
 		<table align="center"  height="50">

@@ -37,13 +37,7 @@ foreach ($result as $person)
 			</tr>
 		</table>
 		<br></br>
-		<p id="teacher">
-		<?php 
-			echo $person['subject'];
-			echo '<br>';
-			echo $person['teacher'];
-		?>
-		先生</p> 
+		<p id="center">シラバス</p> 
 		<br></br>
 		<style type="text/css">
 			.table3 {
@@ -85,10 +79,10 @@ echo "<img src='data:${mime};base64,${image}'>";
 ?>
 			</tr>
 		</table>
-		<table width="1200" align="center" rules="all" frame="all" border="1" bgcolor="#000000">
+		<table width="1200" align="center" rules="all" frame="all" border="1" bgcolor="#ffffff">
 			<tr>
-				<td align="center"><a href="index.htm"><font size="7" color="ff0000">トップページへ</font></a></td>
-				<td align="center"><a href="PastQuestionsMenu.htm"><font size="7" color="ff0000">　過去問メニューへ</font></a></td>
+				<td align="center"><a href="index.htm"><font size="7" color="ff0000"><b>トップページへ</b></font></a></td>
+				<td align="center"><a href="PastQuestionsMenu.htm"><font size="7" color="ff0000"><b>過去問メニューへ</b></font></a></td>
 			</tr>
 		</table>
 	</body>

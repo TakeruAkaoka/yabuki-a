@@ -29,7 +29,7 @@
 
 </head>
 
-<body>
+<body vlink="red">
 
 <table width="100%" align="center" frame="void" rules="none" border="2"  bordercolor="#bdb76b" bgcolor="#000000" >
 <tr>
@@ -90,7 +90,7 @@
       <br>
       <br>
       <form method="post" action="tweetimage.php" enctype="multipart/form-data">
-        <p>数字とセメスター
+        <p>時間割名
           <input type="text" name="example1" value="" autofocus></p>
         <p>画像を選択：<input type="file" name="image"></p>
         <p><input type="submit" value="送信する"></p>
