@@ -46,12 +46,20 @@ if(empty($_POST)) {
 
 if(count($errors) === 0){
 
+<<<<<<< HEAD
 	$dsn = 'mysql:host=localhost;dbname=kensaku;charset=utf8';
 	$user = 'k';
 	$password = '12345';
+=======
+require_once 'database_conf.php';
+
+	//$dsn = 'mysql:host=localhost;dbname=kensaku;charset=utf8';
+	//$user = 'k';
+	//$password = '12345';
+>>>>>>> origin/master
 
 	try{
-		$dbh = new PDO($dsn, $user, $password);
+		$dbh = new PDO($dsn, $dbUser, $dbPass);
 		$statement = $dbh->prepare("SELECT * FROM seika WHERE name LIKE (:name) ");
 
 		if($statement){

@@ -15,7 +15,17 @@
 </form>
 
 <br>
+<<<<<<< HEAD
 <p id="komidashi"><b>1年次・オリエンテーション</b></p>
+=======
+
+
+<table width="800" height="50">
+			<tr>
+				<td align="center"><p id="komidashi"><b>1年次・オリエンテーション</b></p></td>
+			</tr>
+		</table>
+>>>>>>> origin/master
 
 <?php
 //データベース接続設定
@@ -47,7 +57,15 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 ?>
 
 
+<<<<<<< HEAD
 <br>
+=======
+<table width="800" height="50">
+			<tr>
+				<td align="center"><p id="komidashi"><b>2年後期・PM実験</b></p></td>
+			</tr>
+		</table>
+>>>>>>> origin/master
 
 <p id="komidashi"><b>2年後期・PM実験</b></p></td>
 <?php
