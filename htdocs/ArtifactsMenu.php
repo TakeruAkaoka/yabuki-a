@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-style-Type" dontent="text/css">
+<meta http-equiv="Content-style-Type" content="text/css">
 <title>過去の演習の成果物のメニュー</title>
 <link rel="stylesheet"href="style1.css" type="text/css">
 <style type="text/css">a { text-decoration: none; }</style>
