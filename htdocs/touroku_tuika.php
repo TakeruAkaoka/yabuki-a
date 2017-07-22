@@ -42,7 +42,8 @@
           $prepare->bindValue(':imgdat', $imgdat, PDO::PARAM_STR);             
           $prepare->execute();
           $id = $db->lastInsertId();
-          echo '<p>結果</p>';
+          echo '<p> 登録完了</p>';
+          echo '<a link="select.php">'過去問選択画面へ'</a>';
         } catch (PDOException $e) {
           echo 'エラーが発生しました。内容: ' . h($e->getkyoukasyo());
         }
