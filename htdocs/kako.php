@@ -56,7 +56,7 @@ foreach ($result as $person)
 			<tr><td align="center">単位数</td><td colspan="2"><?php echo $person['tanni'];?></td></tr>
 			<tr><td  align="center"colspan="3">評価基準</td></tr>
 			<tr><td>期末試験<?php echo $person['kimatu'];?>%</td>
-				<td>中間試験<?php echo $person['tyuukan'];?>%</td><td>提出物20%</td></tr>
+				<td>中間試験<?php echo $person['tyuukan'];?>%</td><td><?php echo $person['teisyutu'];?>%</td></tr>
 			<tr><td align="center">出席</td><td colspan="2"><?php echo $person['syusseki'];?>回以上欠席した場合は単位を取得できない</td></tr>
 			<tr><td align="center">教科書・参考書</td><td colspan="2"><?php echo $person['kyoukasyo'];?></td></tr>
 		</table>
