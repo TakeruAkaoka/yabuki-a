@@ -3,7 +3,7 @@
         require_once 'database_conf.php';
         try {
           $db = new PDO($dsn, $dbUser, $dbPass);
-          $sql = 'INSERT INTO posts (semesuta, mime, imgdat) VALUES (:semesuta, :mime, :imgdat)';
+          $sql = 'INSERT INTO posts (subject,teacher,semesuta,tanni,kimatu,tyuukan,kyoukasyo,syusseki,teisyutu,flag, mime, imgdat) VALUES (:subject,:teacher,:semesuta,:tanni,:kimatu,:tyuukan,:kyoukasyo,:syusseki,:teisyutu,:flag, :mime, :imgdat)';
           $prepare = $db->prepare($sql);
 
           if (isset($_FILES['imgdat'])) {
@@ -16,11 +16,30 @@
             }
           }
 
+          $subject = $_POST['subject'];
+          $teacher = $_POST['teacher'];
           $semesuta = $_POST['semesuta'];
-
+          $tanni = $_POST['tanni'];
+          $kimatu = $_POST['kimatu'];
+          $tyuukan = $_POST['tyuukan'];
+          $kyoukasyo = $_POST['kyoukasyo'];
+          $syusseki = $_POST['syusseki'];
+          $teisyutu = $_POST['teisyutu'];
+          $flag = $_POST['flag'];
+          $mime = $_POST['mime'];
+              
+          $prepare->bindValue(':subject', $subject, PDO::PARAM_STR);
+          $prepare->bindValue(':teacher', $teacher, PDO::PARAM_STR);
           $prepare->bindValue(':semesuta', $semesuta, PDO::PARAM_INT);
+          $prepare->bindValue(':tanni', $tanni, PDO::PARAM_STR);
+          $prepare->bindValue(':kimatu', $kimatu, PDO::PARAM_INT);
+          $prepare->bindValue(':tyuukan', $tyuukan, PDO::PARAM_INT);
+          $prepare->bindValue(':kyoukasyo', $kyoukasyo, PDO::PARAM_STR);          
+          $prepare->bindValue(':syusseki', $syusseki, PDO::PARAM_INT);
+          $prepare->bindValue(':teisyutu', $teisyutu, PDO::PARAM_INT);
+          $prepare->bindValue(':flag', $flag, PDO::PARAM_STR);
           $prepare->bindValue(':mime', $type, PDO::PARAM_STR);
-          $prepare->bindValue(':imgdat', $imgdat, PDO::PARAM_STR);
+          $prepare->bindValue(':imgdat', $imgdat, PDO::PARAM_STR);             
           $prepare->execute();
           $id = $db->lastInsertId();
           echo '<p>結果</p>';

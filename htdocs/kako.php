@@ -37,17 +37,8 @@ foreach ($result as $person)
 			</tr>
 		</table>
 		<br></br>
-<<<<<<< HEAD
 		<p id="center">シラバス</p> 
-=======
-		<p id="center">
-		<?php 
-			echo $person['subject'];
-			echo '<br>';
-			echo $person['teacher'];
-		?>
-		先生</p> 
->>>>>>> origin/master
+
 		<br></br>
 		<style type="text/css">
 			.table3 {

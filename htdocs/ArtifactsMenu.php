@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-style-Type" dontent="text/css">
+<meta http-equiv="Content-style-Type" content="text/css">
 <title>過去の演習の成果物のメニュー</title>
 <link rel="stylesheet"href="style1.css" type="text/css">
 <style type="text/css">a { text-decoration: none; }</style>
@@ -16,6 +16,7 @@
 
 <br>
 
+<p id="komidashi"><b>1年次・オリエンテーション</b></p>
 
 <?php
 //データベース接続設定
@@ -47,15 +48,6 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 ?>
 
 
-<<<<<<< HEAD
-<br>
-=======
-<table width="800" height="50">
-			<tr>
-				<td align="center"><p id="komidashi"><b>2年後期・PM実験</b></p></td>
-			</tr>
-		</table>
->>>>>>> origin/master
 
 <p id="komidashi"><b>2年後期・PM実験</b></p></td>
 <?php
