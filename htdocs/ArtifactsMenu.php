@@ -49,7 +49,7 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 
 
 
-<p id="komidashi"><b>2年後期・PM実験</b></p></td>
+<p id="komidashi"><b>PM実験・前半</b></p></td>
 <?php
 //prefテーブルからすべてのデータを取り出すSQL文を作る
 $sql = "SELECT name, url FROM seika  LIMIT 39 OFFSET 16";
@@ -71,10 +71,10 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 ?>
 <br>
 
-<!--
+
 <table width="800" height="50">
 			<tr>
-				<td align="center"><p id="komidashi"><b>2年後期・PM演習</b></p></td>
+				<td align="center"><p id="komidashi"><b>PM演習・後半</b></p></td>
 			</tr>
 		</table>
 
@@ -97,7 +97,7 @@ print "<table align='center' width='2000px'></tr>";
 print "<tr align='center'><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$person["name"]."</a></td></font></tr></table>";
 }
 ?>
---!>
+
 <br>
 <br>
 <hr>
