@@ -39,7 +39,7 @@
           $prepare->bindValue(':image', $image, PDO::PARAM_STR);
           $prepare->execute();
           $id = $db->lastInsertId();
-          echo "<p><a href='showallimage.php'>確認</a></p>";
+          echo "<p><a href='showall2.php'>確認</a></p>";
         } catch (PDOException $e) {
           echo 'エラーが発生しました。内容: ' . h($e->getMessage());
         }
