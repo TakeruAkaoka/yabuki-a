@@ -83,7 +83,7 @@ echo "<img src='data:${mime};base64,${image}'>";
 		<table width="1200" align="center" rules="all" frame="all" border="1" bgcolor="#ffffff">
 			<tr>
 				<td align="center"><a href="index.htm"><font size="7" color="ff0000"><b>トップページへ</b></font></a></td>
-				<td align="center"><a href="PastQuestionsMenu.htm"><font size="7" color="ff0000"><b>過去問メニューへ</b></font></a></td>
+				<td align="center"><a href="select.php"><font size="7" color="ff0000"><b>過去問メニューへ</b></font></a></td>
 			</tr>
 		</table>
 	</body>

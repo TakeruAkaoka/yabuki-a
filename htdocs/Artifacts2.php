@@ -57,7 +57,7 @@ foreach ($result as $person)
 	<table width="1000px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<font size="6"color="000000"><b>2年前期・PM実験</b></font>
+					<p id="komidashi"><b>2年前期・PM実験</b></font>
 				</th>
 
 			</tr>
@@ -66,10 +66,10 @@ foreach ($result as $person)
 	<table width="500px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<font size="6"color="000000"><b><?php echo $person['teacher'];?>研究室</b></font>
+					<p id="komidashi"><b><?php echo $person['teacher'];?>研究室</b></font>
 				</th>
 <th>
-					<font size="6"color="000000"><b><?php echo $person['gr'];?>グループ</b></font>
+					<p id="komidashi"><b><?php echo $person['gr'];?>グループ</b></font>
 				</th>
 
 			</tr>
@@ -82,18 +82,10 @@ foreach ($result as $person)
 
 <table align="center" width="1000" height="50" border="0" >
 			<tr>
-				<td align="center"><font size="6" color="000000"><b>1.発表パワーポイント<b></font></td>
+				<td align="center"><p id="komidashi"><b>1.発表パワーポイント<b></font></td>
 
 			</tr>
 		</table>
-
-<table align="center" width="1000" height="50" border="3" rules="none">
-			<tr>
-				<td align="center"><font size="6" color="000000"><b><a href="pdf1.php" target="new">パワーポイントを表示</a><b></font></td>
-
-			</tr>
-		</table>
-
  <br>
  <br>
 		<table align="center"  height="50">
@@ -114,10 +106,10 @@ echo "<img src='data:${mime};base64,${image}'>";
 <hr>
 <br>
 <br>
-<table width="1200" align="center" rules="all" frame="all" border="1" bgcolor="#dcdcdc">
+<table width="1200" align="center" rules="all" frame="all" border="1" bgcolor="#ffffff">
 <tr>
-<td align="center"><a href="ArtifactsMenu.php"><font size="7" color="000000">成果物メニューへ</font></a></td>
-<td align="center"><a href="index.htm"><font size="7" color="000000">　トップページへ</font></a></td>
+<td align="center"><a href="ArtifactsMenu.php"><font size="7" color="ff0000">成果物メニューへ</font></a></td>
+<td align="center"><a href="index.htm"><font size="7" color="ff0000">　トップページへ</font></a></td>
 </tr>
 </table>
 <br>
