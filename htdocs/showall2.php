@@ -7,10 +7,10 @@
   </head>
   <body vlink="red">
 
-<table width="1000" align="center" frame="void" rules="none" border="2"  bordercolor="#bdb76b" bgcolor="#ffffff" >
+<table width="1000" align="center" frame="void" rules="none" border="2"  bordercolor="#bdb76b" bgcolor="#000000" >
 <tr>
 <td align="center" valign="middle">
-<font size="7"color="#000000"><b>PM学科専用闇キャンパスポータル</b></font>
+<font size="7"color="#ff0000"><b>PM学科専用闇キャンパスポータル</b></font>
 </td>
 </tr>
 </table>
