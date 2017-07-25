@@ -32,7 +32,7 @@ echo '<table class="yoko">';
         foreach ($result as $tweet) {
 		$url = 'kako.php?foo=' .h($tweet['ID']);
 		if(h($tweet['flag']) == 0) {
-echo '<tr><td class="sensei"><button>'.h($tweet['teacher']).'</button></td><td class="akaku"><a href="' .$url.'">'.h($tweet['subject']).'</a></td></tr>';
+echo '<tr><td class="sensei">'.h($tweet['teacher']).'</td><td class="akaku"><a href="' .$url.'">'.h($tweet['subject']).'</a></td></tr>';
         }
 	elseif(h($tweet['flag']) == 1) {
 echo '<tr><td>'.'</td><td class="akaku"><a href="' .$url.'">'.h($tweet['subject']).'</a></td></tr>';
