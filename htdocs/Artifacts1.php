@@ -64,7 +64,7 @@ foreach ($result as $person)
 
 <table align="center" width="1000" height="50" border="0" >
 			<tr>
-				<td align="center"><p id="komidashi"><b>1.発表パワーポイント</b></p></td>
+				<td align="center"><p id="komidashi"><b>発表パワーポイント</b></p></td>
 
 			</tr>
 		</table>
