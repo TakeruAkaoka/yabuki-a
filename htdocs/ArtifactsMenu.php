@@ -106,9 +106,9 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 <br>
 <br>
 
-<table width="800" align="center" rules="all" frame="all" border="1" bgcolor="#dcdcdc">
+<table width="800" align="center" rules="all" frame="all" border="1" bgcolor="#ffffff">
 <tr>
-<td align="center"><a href="index.htm"><font size="7" color="000000">　トップページへ</font></a></td>
+<td align="center"><a href="index.htm"><font size="7" color="ff0000">　トップページへ</font></a></td>
 </tr>
 </table>
 <br>
