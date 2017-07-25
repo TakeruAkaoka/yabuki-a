@@ -22,7 +22,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-style-Type" dontent="text/css">
+<meta http-equiv="Content-style-Type" content="text/css">
 <title>PM学科専用闇キャンパスポータル</title>
 <link rel="stylesheet"href="style1.css" type="text/css">
 		<style type="text/css">a { text-decoration: none; }</style>
@@ -92,12 +92,12 @@
       <form method="post" action="tweetimage.php" enctype="multipart/form-data">
         <p>時間割名
           <input type="text" name="example1" value="" autofocus></p>
-        <p>画像を選択：<input type="file" name="image"></p>
+        <p>画像を選択：<input type="file" name="image" style="font-size:17px;"></p>
         <p><input type="submit" value="送信する"></p>
       </form>
     </div>
   
-		<table width="1200" align="center" rules="all" frame="all" border="1" bgcolor="#ffffff">
+		<table width="380" align="center" rules="all" frame="all" border="1" bgcolor="#ffffff">
 			<tr>
 				<td align="center"><a href="index.htm"><font size="7" color="ff0000"><b>トップページへ</b></font></a></td>
 			</tr>
