@@ -10,7 +10,7 @@
 <body link="#ff0000" vlink="#ff0000" alink="#ff0000">
 <h1>PM学科専用闇キャンパスポータル</h1>
 <form align="center" action="kensaku.php" method="post">
-<p>キーワードを入力してください：</p><input type="text" name="yourname">
+<p>キーワードを入力してください</p><input type="text" name="yourname">
 <input type="submit" value="検索する">
 </form>
 

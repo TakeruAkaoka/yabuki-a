@@ -46,7 +46,7 @@ foreach ($result as $person)
 	<table width="1000px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<p id="komidashi"><b>過去の演習の成果物</b></font>
+					<p id="komidashi"><b>過去の演習の成果物</b></p>
 				</th>
 
 			</tr>
@@ -57,7 +57,7 @@ foreach ($result as $person)
 	<table width="1000px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<p id="komidashi"><b>2年前期・PM実験</b></font>
+					<p id="komidashi"><b>2年前期・PM実験</b></p>
 				</th>
 
 			</tr>
@@ -66,10 +66,10 @@ foreach ($result as $person)
 	<table width="500px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<p id="komidashi"><b><?php echo $person['teacher'];?>研究室</b></font>
+					<p id="komidashi"><b><?php echo $person['teacher'];?>研究室</b></p>
 				</th>
 <th>
-					<p id="komidashi"><b><?php echo $person['gr'];?>グループ</b></font>
+					<p id="komidashi"><b><?php echo $person['gr'];?>グループ</b></p>
 				</th>
 
 			</tr>
@@ -82,7 +82,7 @@ foreach ($result as $person)
 
 <table align="center" width="1000" height="50" border="0" >
 			<tr>
-				<td align="center"><p id="komidashi"><b>1.発表パワーポイント<b></font></td>
+				<td align="center"><p id="komidashi"><b>発表パワーポイント<b></p></td>
 
 			</tr>
 		</table>
