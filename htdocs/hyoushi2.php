@@ -92,7 +92,7 @@
       <form method="post" action="tweetimage.php" enctype="multipart/form-data">
         <p>時間割名
           <input type="text" name="example1" value="" autofocus></p>
-        <p>画像を選択：<input type="file" name="image" style="font-size:17px;"></p>
+        <p>画像を選択：<input type="file" name="image" style="font-size:17px;" required></p>
         <p><input type="submit" value="送信する"></p>
       </form>
     </div>
