@@ -49,7 +49,7 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 
 
 
-<p id="komidashi"><b>PM実験・前半</b></p></td>
+<p id="komidashi"><b>PM実験・前半</b></p>
 <?php
 //prefテーブルからすべてのデータを取り出すSQL文を作る
 $sql = "SELECT name, url FROM seika  LIMIT 39 OFFSET 16";
@@ -72,12 +72,7 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 <br>
 
 
-<table width="800" height="50">
-			<tr>
-				<td align="center"><p id="komidashi"><b>PM演習・後半</b></p></td>
-			</tr>
-		</table>
-
+<p id="komidashi"><b>PM実験・前半</b></p>
 <?php
 //prefテーブルからすべてのデータを取り出すSQL文を作る
 $sql = "SELECT name, url FROM seika  LIMIT 40 OFFSET 55";
@@ -92,9 +87,9 @@ $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
   //取り出したデータは連想配列として参照できる
 foreach ($result as $person) {
 
-print "<table align='center' width='2000px'></tr>";
+print "<table class='hidari'>";
 
-print "<tr align='center'><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$person["name"]."</a></td></font></tr></table>";
+print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$person["name"]."</a></td></font></tr></table>";
 }
 ?>
 
