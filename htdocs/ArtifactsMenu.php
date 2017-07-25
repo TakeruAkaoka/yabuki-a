@@ -97,12 +97,12 @@ print "<tr><td><font size='7' color='000000'><b><a href = ".$person["url"].">".$
 <br>
 <hr>
 <br>
-
+<!--
 <form align="center" action="kensaku.php" method="post">
 キーワードを入力してください：<input type="text" name="yourname">
 <input type="submit" value="検索する">
 </form>
-
+-->
 <br>
 <br>
 
