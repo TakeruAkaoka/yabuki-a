@@ -1,27 +1,74 @@
 ﻿<!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>新規シラバス・過去問登録</title>
- </head>
-
- <body>
-      <form method="post" action="touroku_tuika.php" enctype="multipart/form-data">
-       <p>教科名は？</p><input type="text" name="subject"><br>
-       <p>講師名は？</p><input type="text" name="teacher" placeholder="teacher"><br>
-       <p>セメスタは？</p><input type="text" name="semesuta" placeholder="semesuta"><br>
-       <p>単位数は？</p><input type="text" name="tanni" placeholder="tanni"><br>
-       <p>期末評価は？</p><input type="text" name="kimatu" placeholder="kimatu"><br>
-       <p>中間評価は？</p><input type="text" name="tyuukan" placeholder="tyuukan"><br>
-       <p>教科書は？</p><input type="text" name="kyoukasyo" placeholder="kyoukasyo"><br>
-       <p>出席回数は？</p><input type="text" name="syusseki" placeholder="syusseki"><br>
-       <p>提出回数は？</p><input type="text" name="teisyutu" placeholder="teisyutu"><br>
-       <p>mimeは？</p><input type="text" name="mime" placeholder="mime"><br>
-       <p>flag</p><input type="text" name="flag" placeholder="flag"><br>
-        <input type="text" name="example1" value="" autofocus><br>
-        <input type="file" name="imgdat"><br>
-        <input type="submit" value="送信する">
-      </form>
- </body>
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <title>新規シラバス・過去問登録</title>
+<script>
+  function key_down(get_code){
+     if(
+          get_code >= 48 && get_code <= 57  //数字キー
+       || get_code >= 96 && get_code <= 105 //テンキーの数字
+       || get_code == 8 //bs
+       || get_code == 9 //tab
+     )
+       return true;
+     else
+       return false;
+  }
+function checkForm($this)
+{
+	var str=$this.value;
+	while(str.match(/[^A-Z^a-z\d\-]/))
+	{
+		str=str.replace(/[^A-Z^a-z\d\-]/,"");
+	}
+	$this.value=str;
+}
+</script>
+  </head>
+  <body>
+    <form method="post" action="touroku_tuika.php" enctype="multipart/form-data">
+    <table>
+      <tr>
+        <td>教科名は？</td><td><input type="text" name="subject" placeholder="subject"required autofocus></td>
+      </tr>
+      <tr>
+        <td>講師名は？</td><td><input type="text" name="teacher" placeholder="teacher"required></td>
+      </tr>
+      <tr>
+        <td>セメスタは？</td><td><input type="number" min="0" max="2" name="semesuta" placeholder="semesuta" size:20 style="width:162px;height:17px;"required></td>
+      </tr>
+      <tr>
+        <td>単位数は？</td><td><input type="text" name="tanni" placeholder="tanni" onkeydown="return key_down(event.keyCode)"onInput="checkForm(this)"required></td>
+      </tr>
+      <tr>
+        <td>期末評価は？</td><td><input type="text" name="kimatu" placeholder="kimatu" onkeydown="return key_down(event.keyCode)"onInput="checkForm(this)"required></td>
+      </tr>
+      <tr>
+        <td>中間評価は？</td><td><input type="text" name="tyuukan" placeholder="tyuukan" onkeydown="return key_down(event.keyCode)"onInput="checkForm(this)"required></td>
+      </tr>
+      <tr>
+        <td>教科書は？</td><td><input type="text" name="kyoukasyo" placeholder="kyoukasyo"required></td>
+      </tr>
+      <tr>
+        <td>出席回数は？</td><td><input type="text" name="syusseki" placeholder="syusseki" onkeydown="return key_down(event.keyCode)"onInput="checkForm(this)"required></td>
+      </tr>
+      <tr>
+        <td>提出回数は？</td><td><input type="text" name="teisyutu" placeholder="teisyutu" onkeydown="return key_down(event.keyCode)"onInput="checkForm(this)"required></td>
+      </tr>
+      <tr>
+        <td>mimeは？</td><td><input type="text" name="mime" placeholder="mime"required></td>
+      </tr>
+      <tr>
+        <td>flag</td><td><input type="number" min="0" max="2" name="flag" placeholder="flag"required></td>
+      </tr>
+    </table>
+    <!--<input type="text" name="example1" value="" autofocus>-->
+    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+    <input type="file" name="imgdat" ><br>
+    <input type="submit" value="送信する">
+    </form>
+  <a href="index.htm">トップページへ</a>
+  </body>
 </html>

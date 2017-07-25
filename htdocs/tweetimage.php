@@ -45,15 +45,6 @@
         }
       }
       ?>
-      <br>
-      <br>
-      <br>
-      <p>他の画像登録↓</p>
-      <form method="post" action="tweetimage.php" enctype="multipart/form-data">
-        <p>セメスターと数字
-          <input type="text" name="example1" value="" autofocus></p>
-        <p>画像：<input type="file" name="image"></p>
-        <p><input type="submit" value="登録する"></p>
       </form>
     </div>
   </body>
