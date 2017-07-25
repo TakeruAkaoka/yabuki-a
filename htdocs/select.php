@@ -35,7 +35,7 @@ echo '<table class="yoko">';
 echo '<tr><td><a href="' .$url.'">'.h($tweet['teacher']).'</a></td><td class="akaku"><a href="' .$url.'">'.h($tweet['subject']).'</a></td></tr>';
         }
 	elseif(h($tweet['flag']) == 1) {
-echo '<tr><td><a href="' .$url.'">'.'</a></td><td class="akaku"><a>'.h($tweet['subject']).'</a></td></tr>';
+echo '<tr><td><a href="' .$url.'">'.'</a></td><td class="akaku"><a href="' .$url.'">'.h($tweet['subject']).'</a></td></tr>';
 	}
 	
 	}
