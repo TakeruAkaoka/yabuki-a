@@ -46,7 +46,7 @@ foreach ($result as $person)
 	<table width="1000px" align="center" rules="none" frame="void" border="none" bgcolor="transparent">
 			<tr>
 				<th>
-					<font size="6"color="000000"><b>過去の演習の成果物</b></font>
+					<"komidashi"><b>過去の演習の成果物</b></font>
 				</th>
 
 			</tr>
