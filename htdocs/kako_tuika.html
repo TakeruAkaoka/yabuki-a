@@ -8,6 +8,7 @@
   function key_down(get_code){
      if(
           get_code >= 48 && get_code <= 57  //数字キー
+|| get_code = 69
        || get_code >= 96 && get_code <= 105 //テンキーの数字
        || get_code == 8 //bs
        || get_code == 9 //tab
@@ -37,7 +38,7 @@ function checkForm($this)
         <td>講師名は？</td><td><input type="text" name="teacher" placeholder="teacher"required></td>
       </tr>
       <tr>
-        <td>セメスタは？</td><td><input type="number" min="0" max="2" name="semesuta" placeholder="semesuta" size:20 style="width:162px;height:17px;"required></td>
+        <td>セメスタは？</td><td><input type="number" min="0" max="8" name="semesuta" placeholder="semesuta" size:20 style="width:162px;height:17px;"required></td>
       </tr>
       <tr>
         <td>単位数は？</td><td><input type="text" name="tanni" placeholder="tanni" onkeydown="return key_down(event.keyCode)"onInput="checkForm(this)"required></td>
