@@ -22,7 +22,7 @@
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         #すべてのつぶやきをデータベースから取得する。
-        $sql = 'SELECT * FROM posts ORDER BY ID';
+        $sql = 'SELECT * FROM posts ORDER BY kana';
         $prepare = $db->prepare($sql);
         $prepare->execute();
         $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
@@ -31,14 +31,8 @@ echo '<table class="yoko">';
 		
         foreach ($result as $tweet) {
 		$url = 'kako.php?foo=' .h($tweet['ID']);
-		if(h($tweet['flag']) == 0) {
 echo '<tr><td class="sensei">'.h($tweet['teacher']).'</td><td class="akaku"><a href="' .$url.'">'.h($tweet['subject']).'</a></td></tr>';
         }
-	elseif(h($tweet['flag']) == 1) {
-echo '<tr><td>'.'</td><td class="akaku"><a href="' .$url.'">'.h($tweet['subject']).'</a></td></tr>';
-	}
-	
-	}
 echo '</table>';
       } catch (PDOException $e) {
         # エラーが発生した場合、PDOException例外がスローされるのでキャッチします。
