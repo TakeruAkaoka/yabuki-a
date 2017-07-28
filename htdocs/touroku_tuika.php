@@ -75,7 +75,7 @@ if (isset($_POST['subject']) && isset($_FILES['imgdat'])) {
 
 
     // レスポンス表示
-    var_dump($res);
+//    var_dump($res);
 
 } else {
   echo '失敗';
