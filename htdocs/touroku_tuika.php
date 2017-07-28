@@ -61,8 +61,8 @@ if (isset($_POST['subject']) && isset($_FILES['imgdat'])) {
     //リクエストを投げる先（固定値）
     //※前の「https://api.twitter.com/1.1/」と後ろの「.json」は
     //　TwitterOAuth内で勝手にくっつくのでいらない
-//    $url = "https://api.twitter.com/1.1/statuses/update.json";
-    $url = "statuses/update";
+    $url = "https://api.twitter.com/1.1/statuses/update.json";
+//    $url = "statuses/update";
 
     //投稿する文言
     $postMsg = "$teacher"."・"."$subject"."が追加されました。";
